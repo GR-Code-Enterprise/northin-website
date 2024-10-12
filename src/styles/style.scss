@@ -1,2 +1,11 @@
+
 @import "./commons/reset.scss";
 @import "./commons/fonts.scss";
+@import "./commons/variables.scss";
+
+@import "./components/c-section.scss";
+@import "./components/c-btn.scss";
+
+@import "./pages/index/introduction.scss";
+
+@import "./global.scss";

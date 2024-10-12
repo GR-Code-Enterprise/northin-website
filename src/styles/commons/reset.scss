@@ -20,7 +20,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section, img {
 	display: block;
 }
 body {
@@ -40,4 +40,12 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+button{
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+a{
+	text-decoration: none;
 }
