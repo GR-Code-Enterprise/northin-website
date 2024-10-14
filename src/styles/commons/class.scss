@@ -1,0 +1,9 @@
+.d-none{
+    display: none;
+}
+
+.d-md-block{
+    @media(min-width: 991px){
+        display: block;
+    }
+}
