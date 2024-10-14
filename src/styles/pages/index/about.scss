@@ -1,0 +1,108 @@
+.about{
+    &__container{
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: 991px){
+            flex-direction: column;
+            justify-content: initial;
+        }
+
+        &__left{
+            max-width: 516px;
+            margin-right: 50px;
+
+            @media(max-width: 991px){
+                max-width: initial;
+                margin-right: 0;
+            }
+
+            &__title{
+                margin-bottom: 50px;
+            }
+
+            &__description{
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 28px;
+                color: $secondary;
+                margin-bottom: 110px;
+            }
+
+            &__titleOfCTA{
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 42px;
+                color: $primary;
+                margin-bottom: 40px;
+            }
+
+            &__cta{
+                width: 100%;
+                max-width: initial;
+
+                @media(max-width: 991px){
+                    max-width: 500px;
+                }
+            }
+        }
+
+        &__right{
+            flex: 1 0 625px;
+            max-width: 625px;
+            min-height: 100%;
+            box-sizing: border-box;
+            position: relative;
+
+            @media(max-width: 991px){
+                flex: 1;
+                min-height: initial;
+                margin: 50px auto 0 auto;
+            }
+
+            &__carousel{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                border-radius: 10px;
+                position: relative;
+                overflow: hidden;
+
+                &__rightArrow{
+                    border: 1px solid $primary;
+                    cursor: pointer;
+                    padding: 11px;
+                    position: absolute;
+                    top: 50%;
+                    right: 15px;
+                    transform: translateY(-50%);
+                    z-index: 2;
+                    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .1);
+                    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, .2));
+
+                    &:hover{
+                        background-color: $primary;
+                        
+                        path{
+                            fill: #000;
+                        }
+                    }
+                }
+
+                &__slider{
+                    height: 100%;
+                    display: flex;
+                    transition: all .3s;
+                    
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+
+                    }
+                }
+            }
+
+        }
+    }   
+}

@@ -1,3 +1,4 @@
+// Display
 .d-none{
     display: none;
 }
@@ -5,5 +6,37 @@
 .d-md-block{
     @media(min-width: 991px){
         display: block;
+    }
+}
+
+
+
+
+
+// Text align
+.text-center{
+    text-align: center;
+}
+
+.text-md-left{
+    @media(min-width: 991px){
+        text-align: left;
+    }
+}
+
+
+
+
+
+// Margin
+.m-x-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.m-x-md-0{
+    @media(min-width: 991px){
+        margin-left: 0;
+        margin-right: 0;
     }
 }
