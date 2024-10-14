@@ -1,0 +1,102 @@
+.projects{
+    margin-bottom: 200px;
+
+    &__container{
+        &__title{
+            color: $primary;
+            font-weight: 600;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        &__description{
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 28px;
+            color: $secondary;
+            margin-bottom: 50px;
+        }
+
+        &__cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+
+            @media(max-width: 991px){
+                grid-template-columns: 1fr;
+            }
+
+            &__card{
+                max-height: max-content;
+                box-sizing: border-box;
+                border-radius: 10px;
+                background-color: $primary;
+                transition: padding .3s;
+                position: relative;
+                
+                &:hover{
+                    background-color: $primary;
+                    padding: 20px 0 0 0;
+
+                    .projects__container__cards__card__projectImg{
+                        width: calc(100% - 40px);
+                    }
+
+                    .projects__container__cards__card__arrow{
+                        transform: rotate(180deg);
+                        bottom: 40px;
+                    }
+
+                    .projects__container__cards__card__info{
+                        margin-top: 0;
+                    }
+                }
+
+                &__projectImg{
+                    width: 100%;
+                    height: 420px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    margin: 0 auto;
+                    position: relative;
+                    transition: width .3s;
+                    z-index: 2;
+                }
+
+                &__arrow{
+                    position: absolute;
+                    bottom: 30px;
+                    right: 20px;
+                    z-index: 3;
+                    transition: all .3s;
+                    transform: rotate(0);
+                }
+
+                &__info{
+                    display: flex;
+                    align-items: center;
+                    padding: 40px 20px 40px 20px;
+                    position: relative;
+                    margin-top: -115px;
+                    transition: margin-top .3s;
+
+                    &__title{
+                        font-size: 30px;
+                        color: #000;
+                        font-weight: 900;
+                        margin-right: 50px;
+                    }
+
+                    &__date{
+                        color: #000;
+                        font-weight: 900;
+                        font-size: 12px;
+                        border: 3px solid #000000;
+                        border-radius: 130px;
+                        padding: 5px 26px;
+                    }
+                }
+            }
+        }
+    }
+}
