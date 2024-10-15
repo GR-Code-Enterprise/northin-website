@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "scss": "sass --watch src/styles/style.scss src/assets/css/style.css --style compressed"
   },
