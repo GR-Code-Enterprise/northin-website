@@ -1,12 +1,12 @@
 // Display
 .d-none{
-    display: none;
+    display: none !important;
 }
 
 .d-md-block{
     @media(min-width: 991px){
-        display: block;
-    }
+        display: block !important;
+    } 
 }
 
 

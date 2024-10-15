@@ -8,12 +8,29 @@
     font-weight: 800;
     font-size: 28px;
     border: 2px solid $primary;
-    border-radius: 200px;
+    border-radius: 5px;
     box-sizing: border-box;
     padding: 20px 20px;
+
+
+
+    &--small{
+        font-weight: 600;
+        font-size: 18px;
+        padding: 12px 35px;
+    }
+
+
 
     &--withBg{
         background-color: $primary;
         color: #000;
+    }
+
+
+
+    &--white{
+        border: 1px solid $secondary;
+        color: $secondary;
     }
 }
