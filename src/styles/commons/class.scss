@@ -2,6 +2,15 @@
 .d-none{
     display: none !important;
 }
+.d-block{
+    display: block !important;
+}
+
+.d-md-none{
+    @media(min-width: 991px){
+        display: none !important;
+    } 
+}
 
 .d-md-block{
     @media(min-width: 991px){

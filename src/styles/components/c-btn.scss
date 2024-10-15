@@ -21,6 +21,18 @@
         padding: 12px 35px;
     }
 
+    &--header{
+        font-weight: 600;
+        font-size: 18px;
+        border-radius: 5px;
+        padding: 12px 35px;
+
+        @media(max-width: 991px){
+            font-size: 12px;
+            padding: 10px 15px;
+        }
+    }
+
 
 
     &--withBg{

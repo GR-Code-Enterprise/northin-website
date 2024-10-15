@@ -17,7 +17,7 @@ const header = {
         const menuBtn = document.querySelector(".header__container__menuBtn")
 
         menuBtn.addEventListener("click", () => {
-            console.log(menuBtn)
+            menuBtn.classList.toggle("header__container__menuBtn--close")
             this.parent.classList.toggle("header--openMenu")
         })
     },
