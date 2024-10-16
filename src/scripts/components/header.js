@@ -13,12 +13,13 @@ const header = {
             link.addEventListener("click", (e) => {
                 e.preventDefault()
 
+                console.log('oi')
                 if(link.classList.contains(activeClass)) return;
 
                 const page = link.dataset.page
                 const url = page == 'index' ? 'index.html' : src + page + ".html"
                 
-                changePage.xmlLoad(url)
+                changePage.change(url)
             })
         });
     },
