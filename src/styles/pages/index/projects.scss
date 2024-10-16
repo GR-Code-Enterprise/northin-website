@@ -23,7 +23,7 @@
             grid-gap: 30px;
 
             @media(max-width: 991px){
-                grid-template-columns: 626px;
+                grid-template-columns: auto;
                 justify-content: center;
             }
 
@@ -34,6 +34,10 @@
                 background-color: $primary;
                 transition: padding .3s;
                 position: relative;
+
+                @media(max-width: 991px){
+                    max-width: 625px;
+                }
                 
                 &:hover{
                     background-color: $primary;
