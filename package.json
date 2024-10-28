@@ -1,0 +1,21 @@
+{
+  "name": "northin-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "scss": "sass --watch src/styles/style.scss src/assets/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GR-Code-Enterprise/northin-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GR-Code-Enterprise/northin-website/issues"
+  },
+  "homepage": "https://github.com/GR-Code-Enterprise/northin-website#readme"
+}

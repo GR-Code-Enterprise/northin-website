@@ -1,0 +1,49 @@
+.c-btn{
+    display: block;
+    max-width: max-content;
+    text-align: center;
+    color: $primary;
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    border: 2px solid $primary;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+
+
+
+    &--small{
+        font-weight: 600;
+        font-size: 18px;
+        border-radius: 5px;
+        padding: 12px 35px;
+    }
+
+    &--header{
+        font-weight: 600;
+        font-size: 18px;
+        border-radius: 5px;
+        padding: 12px 35px;
+
+        @media(max-width: 991px){
+            font-size: 12px;
+            padding: 10px 15px;
+        }
+    }
+
+
+
+    &--withBg{
+        background-color: $primary;
+        color: #000;
+    }
+
+
+
+    &--white{
+        border: 1px solid $secondary;
+        color: $secondary;
+    }
+}

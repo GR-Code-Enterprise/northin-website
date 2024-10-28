@@ -1,0 +1,51 @@
+// Display
+.d-none{
+    display: none !important;
+}
+.d-block{
+    display: block !important;
+}
+
+.d-md-none{
+    @media(min-width: 991px){
+        display: none !important;
+    } 
+}
+
+.d-md-block{
+    @media(min-width: 991px){
+        display: block !important;
+    } 
+}
+
+
+
+
+
+// Text align
+.text-center{
+    text-align: center;
+}
+
+.text-md-left{
+    @media(min-width: 991px){
+        text-align: left;
+    }
+}
+
+
+
+
+
+// Margin
+.m-x-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.m-x-md-0{
+    @media(min-width: 991px){
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
