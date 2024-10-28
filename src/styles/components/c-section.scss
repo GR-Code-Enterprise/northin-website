@@ -14,6 +14,23 @@
             font-weight: 500;
             font-size: 72px;
             line-height: 62px;
+
+            @media(max-width: 991px){
+                font-size: 50px;
+                line-height: 46px;
+            }
+        }
+
+        &__description{
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 28px;
+            color: $secondary;
+
+            @media(max-width: 991px){
+                font-size: 18px;
+                line-height: 22px;
+            }
         }
     }
 }
