@@ -17,7 +17,19 @@
 
             @media(max-width: 991px){
                 font-size: 50px;
-                line-height: 46px;
+                line-height: 48px;
+            }
+
+            &--small{
+                color: $primary;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: normal;
+
+                @media(max-width: 991px){
+                    font-size: 32px;
+                    // line-height: 46px;
+                }
             }
         }
 

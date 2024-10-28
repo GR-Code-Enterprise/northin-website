@@ -1,19 +1,16 @@
 .projects{
     margin-bottom: 250px;
 
+    @media(max-width: 991px){
+        margin-bottom: 150px;
+    }
+
     &__container{
         &__title{
-            color: $primary;
-            font-weight: 600;
-            font-size: 32px;
             margin-bottom: 30px;
         }
 
         &__description{
-            font-weight: 300;
-            font-size: 24px;
-            line-height: 28px;
-            color: $secondary;
             margin-bottom: 50px;
         }
 
@@ -50,6 +47,10 @@
                     .projects__container__cards__card__arrow{
                         transform: rotate(180deg);
                         bottom: 40px;
+
+                        @media(max-width: 991px){
+                            bottom: 20px;
+                        }
                     }
 
                     .projects__container__cards__card__info{
@@ -91,7 +92,7 @@
                         flex-direction: column;
                         align-items: flex-start;
                     }
-                    @media (max-width: 569px){
+                    @media (max-width: 991px){
                         margin-top: -105px;
                         padding: 20px;
                     }
@@ -106,8 +107,8 @@
                             margin-bottom: 10px;
                         }
                         
-                        @media (max-width: 569px){
-                            font-size: 25px;
+                        @media (max-width: 991px){
+                            font-size: 24px;
                         }
                     }
 
