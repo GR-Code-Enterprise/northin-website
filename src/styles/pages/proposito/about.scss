@@ -1,4 +1,6 @@
 .about{
+    margin-bottom: 60px;
+
     &__container{
         &__title{
             margin-bottom: 40px;
@@ -67,6 +69,36 @@
                         font-size: 18px;
                         line-height: 22px;
                     }
+                }
+            }
+        }
+
+        &__cta{
+            display: grid;
+            align-items: flex-end;
+            justify-content: space-between;
+            grid-template-columns: 481px minmax(auto, 516px);
+            grid-column-gap: 90px;
+            margin-top: 220px;
+
+            @media(max-width: 991px){
+                grid-template-columns: 1fr;
+                justify-content: center;
+                align-items: initial;
+                text-align: center;
+                row-gap: 30px;
+                margin-top: 105px;
+            }
+
+            p{
+                font-weight: 400;
+                font-size: 72px;
+                line-height: 64px;
+                color: #F2E1C2;
+
+                @media(max-width: 991px){
+                    font-size: 50px;
+                    line-height: 50px;
                 }
             }
         }

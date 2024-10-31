@@ -23,10 +23,27 @@
         padding: 16px 18px;
     }
 
+
+
     &--100{
         max-width: initial;
         width: 100%;
     }
+
+    &--516px{
+        max-width: 516px;
+        width: 100%;
+    }
+    &--516pxlg{
+        max-width: 516px;
+        width: 100%;
+
+        @media(max-width: 991px){
+            max-width: max-content;
+        }
+    }
+
+
 
     &--small{
         font-weight: 600;
