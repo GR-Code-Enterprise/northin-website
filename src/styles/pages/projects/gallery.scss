@@ -10,6 +10,10 @@
         &__grid{
             display: grid;
             gap: 30px;
+            
+            @media(max-width: 991px){
+                grid-template-columns: 1fr !important;
+            }
 
             &--twoColumns{
                 grid-template-columns: 1fr 1fr;
