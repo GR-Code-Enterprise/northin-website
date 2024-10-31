@@ -16,8 +16,8 @@
             line-height: 70px;
 
             @media(max-width: 991px){
-                font-size: 50px;
-                line-height: 55px;
+                font-size: 45px;
+                line-height: 45px;
             }
 
             &--small{
@@ -40,8 +40,8 @@
             color: $secondary;
 
             @media(max-width: 991px){
-                font-size: 18px;
-                line-height: 22px;
+                font-size: 16px;
+                line-height: 20px;
             }
         }
     }
