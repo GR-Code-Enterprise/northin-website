@@ -1,0 +1,58 @@
+.toSchedule{
+    margin-top: 140px;
+    margin-bottom: 250px;
+
+    @media(max-width: 991px){
+        margin: 100px 0 150px 0;
+    }
+
+    &__container{
+        display: grid;
+        grid-template-columns: 500px minmax(auto, 625px);
+        grid-column-gap: 50px;
+        justify-content: space-between;
+
+        @media(max-width: 991px){
+            grid-template-columns: 1fr;
+            row-gap: 50px;
+        }
+
+        &__left{
+            h1{
+                font-size: 72px;
+                line-height: 64px;
+                color: #ED4A24;
+                margin-bottom: 68px;
+
+                @media(max-width: 991px){
+                    max-width: 500px;
+                    font-size: 50px;
+                    line-height: 50px;
+                    margin: 0 auto 30px auto;
+                }
+            }
+
+            p{
+                font-weight: 300;
+                font-size: 32px;
+                color: #F2E1C2;
+                margin-bottom: 30px;
+
+                @media(max-width: 991px){
+                    max-width: 460px;
+                    font-size: 24px;
+                    line-height: 28px;
+                    margin: 0 auto 30px auto;
+                }
+            }
+        }
+
+        img{
+            width: 100%;
+            height: 594px;
+            border-radius: 10px;
+            object-fit: cover;
+            object-position: left;
+        }
+    }
+}
