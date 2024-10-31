@@ -1,0 +1,27 @@
+.gallery{
+    &__container{
+        &__img{
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        &__grid{
+            display: grid;
+            gap: 30px;
+
+            &--twoColumns{
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            &--threeColumns{
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            &--twoRows{
+                grid-template-rows: repeat(2, auto);
+            }
+        }
+    }
+}
