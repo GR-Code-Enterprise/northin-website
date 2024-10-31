@@ -1,5 +1,7 @@
 .c-btn{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: max-content;
     height: max-content;
     text-align: center;
@@ -16,9 +18,21 @@
     &:hover{
         color: #000;
         background-color: $primary;
+
+        svg{
+            path{
+                fill: #000;
+            }
+        }
+    }
+
+    svg{
+        margin-left: 10px;
     }
 
     @media(max-width: 991px){
+        max-width: 516px;
+        width: 100%;
         font-size: 18px;
         line-height: 24px;
         padding: 16px 10px;
@@ -35,6 +49,7 @@
         max-width: 516px;
         width: 100%;
     }
+
     &--516pxlg{
         max-width: 516px;
         width: 100%;
@@ -59,9 +74,14 @@
         border-radius: 5px;
         padding: 12px 35px;
 
+        &:hover{
+            border-color: $primary;
+        }
+
         @media(max-width: 991px){
+            max-width: max-content;
             font-size: 12px;
-            padding: 10px 15px;
+            padding: 4px 15px;
         }
     }
 
