@@ -1,6 +1,10 @@
 .introduction{
     margin-top: 195px;
     margin-bottom: 100px;
+
+    @media(max-width: 991px){
+        margin-top: 120px;
+    }
     
     &__container{
         background-image: url("/src/assets/images/pages/index/introduction/bg.png");
@@ -16,7 +20,9 @@
             background-size: 800px;
         }
         @media(max-width: 991px){
-            
+            padding-top: 40px;
+            background-size: 400px;
+            background-position: 50px 0;
         }
 
         &__left{
@@ -28,6 +34,13 @@
 
             &__title{
                 margin-bottom: 70px;
+
+                @media(max-width: 991px){
+                    font-size: 45px;
+                    line-height: 45px;
+                    max-width: 280px;
+                    margin-bottom: 50px;
+                }
             }
     
             &__description{

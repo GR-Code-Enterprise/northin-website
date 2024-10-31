@@ -8,7 +8,7 @@ const header = {
 
     scroll(){
         window.addEventListener("scroll", (e) => {
-            if(window.scrollY >= (innerWidth > 991 ? 80 : 20)){
+            if(window.scrollY >= (innerWidth > 991 ? 80 : 5)){
                 this.parent.classList.add("header--scroll")
             }
             else{
