@@ -18,6 +18,12 @@
     } 
 }
 
+.d-lg-block{
+    @media(min-width: 1199px){
+        display: block !important;
+    } 
+}
+
 
 
 
