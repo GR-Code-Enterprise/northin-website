@@ -1,0 +1,108 @@
+.about{
+    margin-bottom: 60px;
+
+    &__container{
+        &__title{
+            margin-bottom: 40px;
+
+            @media(max-width: 991px){
+                margin-bottom: 30px;
+            }
+        }
+
+        &__description{
+            margin-bottom: 110px;
+
+            @media(max-width: 991px){
+                margin-bottom: 50px;
+            }
+        }
+
+        &__card{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 110px;
+
+            @media(max-width: 991px){
+                margin-bottom: 50px;
+            }
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+
+            > img{
+                width: 298px;
+                height: 225px;
+                border-radius: 10px;
+                object-fit: cover;
+                margin-right: 60px;
+
+                @media(max-width: 991px){
+                    display: none;
+                }
+            }
+
+            &__right{
+                width: 100%;
+                max-width: 843px;
+
+                h3{
+                    font-weight: 600;
+                    font-size: 40px;
+                    color: #ED4A24;
+                    margin-bottom: 70px;
+
+                    @media(max-width: 991px){
+                        font-size: 32px;
+                        margin-bottom: 30px;
+                    }
+                }
+
+                p{
+                    color: $secondary;
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 28px;
+
+                    @media(max-width: 991px){
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+
+        &__cta{
+            display: grid;
+            align-items: flex-end;
+            justify-content: space-between;
+            grid-template-columns: 481px minmax(auto, 516px);
+            grid-column-gap: 90px;
+            margin-top: 220px;
+
+            @media(max-width: 991px){
+                grid-template-columns: 1fr;
+                justify-content: center;
+                align-items: initial;
+                text-align: center;
+                row-gap: 30px;
+                margin-top: 105px;
+            }
+
+            p{
+                font-weight: 400;
+                font-size: 72px;
+                line-height: 64px;
+                color: #F2E1C2;
+
+                @media(max-width: 991px){
+                    max-width: 340px;
+                    font-size: 50px;
+                    line-height: 50px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

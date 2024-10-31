@@ -1,0 +1,19 @@
+
+@import "./commons/reset.scss";
+@import "./commons/fonts.scss";
+@import "./commons/variables.scss";
+@import "./commons/class.scss";
+@import "./commons/keyframes.scss";
+
+@import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./components/c-section.scss";
+@import "./components/c-btn.scss";
+
+@import "./pages/index/introduction.scss";
+@import "./pages/index/projects.scss";
+@import "./pages/index/about.scss";
+@import "./pages/index/guides.scss";
+@import "./pages/index/history.scss";
+
+@import "./global.scss";

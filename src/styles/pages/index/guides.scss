@@ -1,0 +1,108 @@
+.guides{
+    margin-bottom: 140px;
+
+    @media(max-width: 991px){
+        display: none;
+    }
+
+    &__container{
+        &__title{
+            color: $primary;
+            font-weight: 600;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        &__description{
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 28px;
+            color: $secondary;
+            margin-bottom: 78px;
+        }
+
+        &__topics{
+            display: grid;
+            grid-template-columns: auto 516px;
+            justify-content: space-between;
+            margin-bottom: 110px;
+
+            &__questions{
+                &__question{
+                    max-width: max-content;
+                    min-width: 407px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                    border-bottom: 2px solid #F2E1C2;
+                    margin-bottom: 58px;
+                    padding-bottom: 20px;
+
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+
+                    &--show{
+                        img{
+                            transform: rotate(0) !important;
+                        }
+                    }
+    
+                    p{
+                        color: #F2E1C2;
+                        font-size: 24px;
+                        line-height: 130%;
+                        font-weight: 600;
+                        margin-right: 20px;
+                    }
+    
+                    img{
+                        width: 20px;
+                        transform: rotate(90deg);
+                        transition: transform .3s;
+                    }
+                }
+            }
+
+            &__answers{
+                width: 100%;
+                position: relative;
+
+                &__answer{
+                    width: 100%;
+                    max-width: 516px;
+                    transition: opacity .5s, top .5s;
+                    opacity: 0;
+                    position: absolute;
+                    top: 80px;
+                    right: 0;
+
+                    &--show{
+                        top: 0;
+                        opacity: 1;
+                    }
+
+                    h3{
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 130%;
+                        color: #FFFFFF;
+                        margin-bottom: 25px;
+                    }
+
+                    p{
+                        font-weight: 300;
+                        font-size: 20px;
+                        line-height: 120%;
+                        color: #F2E1C2;
+                    }
+                }
+            }
+        }
+
+        &__cta{
+            max-width: 407px;
+        }
+    }
+}

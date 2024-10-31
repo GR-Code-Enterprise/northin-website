@@ -1,0 +1,21 @@
+.introduction{
+    margin-top: 195px;
+    
+    &__container{
+        // background-image: url("/src/assets/images/pages/index/introduction/bg.png");
+        background-repeat: no-repeat;
+        background-position: top right;
+        padding-top: 110px;
+        padding-bottom: 100px;
+
+        @media(max-width: 1280px){
+            background-size: 1000px;
+        }
+        @media(max-width: 1150px){
+            background-size: 800px;
+        }
+        @media(max-width: 991px){
+            
+        }
+    }
+}
