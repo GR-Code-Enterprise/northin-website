@@ -74,10 +74,6 @@
         border-radius: 5px;
         padding: 12px 35px;
 
-        &:hover{
-            border-color: $primary;
-        }
-
         @media(max-width: 991px){
             max-width: max-content;
             font-size: 12px;
@@ -97,5 +93,9 @@
     &--white{
         border: 1px solid $secondary;
         color: $secondary;
+
+        &:hover{
+            background-color: $secondary;
+        }
     }
 }
