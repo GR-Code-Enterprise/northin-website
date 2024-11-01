@@ -1,0 +1,52 @@
+.scrollControl{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 41.5vh;
+    right: 10px;
+    z-index: 5;
+
+    @media(max-width: 991px){
+        display: none;
+    }
+
+    button{
+        width: max-content;
+        height: max-content;
+        cursor: pointer;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, .25));
+        opacity: 0;
+        transition: opacity .3s;
+        cursor: default;
+
+        &:hover{
+            svg{
+                fill: $primary;
+
+                path{
+                    stroke: #000;
+                }
+
+                rect{
+                    stroke: $primary;
+                }
+            }
+        }
+        
+        svg{
+            display: block;
+        }
+    }
+
+    &__btn{
+        &--show{
+            cursor: pointer !important;
+            opacity: 1 !important;
+        }
+    }
+
+    &__btBtn{
+        margin-top: 60px;
+        transform: rotate(180deg);
+    }
+}
