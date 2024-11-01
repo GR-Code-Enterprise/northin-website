@@ -65,7 +65,29 @@
                         min-height: 240px;
                         margin-right: 40px;
                     }
-                    
+
+                    &--show{
+                        background-color: $primary;
+                        padding: 20px 0 0 0;
+    
+                        .projects__container__carousel__slider__item__projectImg{
+                            width: calc(100% - 40px);
+                        }
+    
+                        .projects__container__carousel__slider__item__arrow{
+                            transform: rotate(0);
+                            bottom: 40px;
+    
+                            @media(max-width: 991px){
+                                bottom: 23px;
+                            }
+                        }
+    
+                        .projects__container__carousel__slider__item__info{
+                            margin-top: 0;
+                        }
+                    }
+
                     &:hover{
                         background-color: $primary;
                         padding: 20px 0 0 0;
