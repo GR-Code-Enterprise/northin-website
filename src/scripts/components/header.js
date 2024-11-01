@@ -2,8 +2,21 @@ const header = {
     parent: document.getElementById("header"),
     nav: document.querySelector(".header__container__nav"),
     links: document.querySelectorAll(".header__container__nav__link"),
+    brandLink: document.querySelector(".header__brandLink"),
 
-    clickLink(){
+    clickBrandLink(){
+        this.brandLink.addEventListener("click", (e) => {
+            if(location.pathname.includes('index')){
+                e.preventDefault()
+            }
+            else return
+
+            window.scroll({
+                top: 0,
+                left: 0,
+                behavior: 'smooth',
+            })
+        })
     },
 
     scroll(){
@@ -27,7 +40,7 @@ const header = {
     },
 
     init(){
-        this.clickLink()
+        this.clickBrandLink()
         this.scroll()
 
         if(innerWidth <= 991) this.mobileMenu()
