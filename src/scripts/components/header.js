@@ -21,7 +21,7 @@ const header = {
 
     scroll(){
         window.addEventListener("scroll", (e) => {
-            if(window.scrollY >= (innerWidth > 991 ? 80 : 5)){
+            if(window.scrollY >= (innerWidth > 991 ? 80 : 15)){
                 this.parent.classList.add("header--scroll")
             }
             else{
