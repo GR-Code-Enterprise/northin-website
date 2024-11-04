@@ -1,7 +1,16 @@
 .otherProjects{
     margin-bottom: 75px;
 
+    @media(max-width: 991px){
+        margin-bottom: 50px;
+    }
+
     &__container{
+        h1{
+            @media(max-width: 991px){
+            }
+        }
+
         &__carousel{
             min-height: 415px;
             margin-top: 68px;
