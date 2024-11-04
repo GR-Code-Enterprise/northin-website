@@ -37,16 +37,6 @@ function projectsCarousel()
             if(innerWidth > 768)
                 slides[slides.length - (count - 1)].classList.remove("projects__container__carousel__slider__item--show")
         }
-        
-        // else if(innerWidth < 768){
-        //     slides[index == 0 ? slides.length - 1 : index - 1].classList.remove("projects__container__carousel__slider__item--show")
-
-
-            
-        //     else{
-                // slides[index + 1].classList.add("projects__container__carousel__slider__item--show")
-        //     }
-        // }
 
         changeSlide()
     })
