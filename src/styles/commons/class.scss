@@ -24,9 +24,21 @@
     } 
 }
 
+.d-md-none{
+    @media(min-width: 991px){
+        display: none !important;
+    } 
+}
+
 .d-lg-block{
     @media(min-width: 1199px){
         display: block !important;
+    } 
+}
+
+.d-lg-none{
+    @media(min-width: 1199px){
+        display: none !important;
     } 
 }
 
