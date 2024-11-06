@@ -73,7 +73,7 @@
             &__link{
                 display: block;
                 color: $primary;
-                font-weight: 600;
+                font-weight: 800;
                 font-size: 18px;
                 text-align: center;
                 border-radius: 5px;
@@ -96,6 +96,7 @@
                 }
 
                 &--active{
+                    font-weight: 700;
                     color: #161616;
                     background-color: $primary;
                 }
