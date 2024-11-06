@@ -23,7 +23,6 @@ function scrollControl()
 
 
     window.addEventListener("scroll", () => {
-        console.log(window.scrollY)
         if(window.scrollY > 1500){
             buttons[0].classList.add("scrollControl__btn--show")
         }

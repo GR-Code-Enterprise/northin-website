@@ -42,7 +42,6 @@ function projectsCarousel()
                 if(innerWidth > 768)
                     slides[slides.length - (count - 1)].classList.remove("otherProjects__container__carousel__slider__item--show")
     
-                console.log(slides.length)
             }
         }
     })
