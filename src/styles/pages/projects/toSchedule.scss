@@ -13,9 +13,9 @@
         justify-content: space-between;
 
         @media(max-width: 991px){
-            grid-template-columns: 516px;
-            justify-content: center;
-            row-gap: 50px;
+            display: block;
+            max-width: 516px;
+            margin: 0 auto;
         }
 
         &__left{
