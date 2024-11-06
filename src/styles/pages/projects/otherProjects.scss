@@ -33,17 +33,20 @@
             }
 
             &__slider{
-                height: 298px;
+                height: 300px;
                 display: flex;
                 transition: all .3s;
                 position: relative;
 
                 &__item{
                     min-width: 310px;
-                    height: 298px;
+                    height: 300px;
+                    box-sizing: border-box;
+                    border-radius: 10px;
                     box-sizing: border-box;
                     position: relative;
                     margin-right: 30px;
+                    transition: border-color .3s;
 
                     &:last-child{
                         margin-right: 0;
@@ -51,6 +54,14 @@
 
                     @media(max-width: 568px){
                         min-width: 100%;
+                    }
+
+                    &--whithBorder{
+                        border: 1px solid #F2E1C2;
+
+                        &:hover{
+                            border-color: transparent !important;
+                        }
                     }
 
                     &--show{
