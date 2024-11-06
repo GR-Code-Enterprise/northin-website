@@ -18,6 +18,9 @@
             &--twoColumns{
                 grid-template-columns: 1fr 1fr;
             }
+            &--twoColumnsAuto{
+                grid-template-columns: auto auto;
+            }
             
             &--threeColumns{
                 grid-template-columns: repeat(3, 1fr);
