@@ -30,18 +30,14 @@ function projectsCarousel()
                     slides[1].classList.add("otherProjects__container__carousel__slider__item--show")
     
                 if(innerWidth > 768)
-                    slides[1].classList.add("otherProjects__container__carousel__slider__item--show")
+                    slides[2].classList.add("otherProjects__container__carousel__slider__item--show")
     
                 if(innerWidth > 991)
-                    slides[1].classList.add("otherProjects__container__carousel__slider__item--show")
-    
+                    slides[3].classList.add("otherProjects__container__carousel__slider__item--show")
+                
                 // Remove
                 if(innerWidth > 568)
-                    slides[slides.length - count].classList.remove("otherProjects__container__carousel__slider__item--show")
-    
-                if(innerWidth > 768)
-                    slides[slides.length - (count - 1)].classList.remove("otherProjects__container__carousel__slider__item--show")
-    
+                    slides[slides.length - 2].classList.remove("otherProjects__container__carousel__slider__item--show")
             }
         }
     })
