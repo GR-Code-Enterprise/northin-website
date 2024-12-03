@@ -135,5 +135,12 @@
                 }
             }
         }
+
+        &__cta{
+            &--active{
+                color: #161616 !important;
+                background-color: #F2E1C2;
+            }
+        }
     }
 }
