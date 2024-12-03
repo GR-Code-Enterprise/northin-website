@@ -1,15 +1,46 @@
 .introduction{
+    background-image: url("/src/assets/images/pages/proposito/placa.webp");
+    background-size: 1300px;
+    background-repeat: no-repeat;
+    background-position: right -250px;
     margin-top: 195px;
-    margin-bottom: 120px;
+    padding-bottom: calc(120px + 50px);
+
+    @media(max-width: 1950px){
+        background-position: calc(100% + 100px) -250px;
+    }
+    @media(max-width: 1800px){
+        background-position: calc(100% + 170px) -250px;
+    }
+    @media(max-width: 1700px){
+        background-position: calc(100% + 225px) -250px;
+    }
+    @media(max-width: 1600px){
+        background-position: calc(100% + 270px) -250px;
+    }
+    @media(max-width: 1500px){
+        background-position: calc(100% + 320px) -250px;
+    }
+    @media(max-width: 1400px){
+        background-position: calc(100% + 350px) -250px;
+    }
+    @media(max-width: 1250px){
+        background-position: calc(100% + 265px) -110px;
+        background-size: 1000px;
+    }
+    @media(max-width: 1150px){
+        background-position: calc(100% + 210px) -60px;
+        background-size: 800px;
+    }
+    @media(max-width: 1050px){
+        background-image: none;
+    }
 
     @media(max-width: 991px){
         margin-top: calc(70px + 80px);
     }
     
     &__container{
-        // background-image: url("/src/assets/images/pages/index/introduction/bg.png");
-        background-repeat: no-repeat;
-        background-position: top right;
         padding-top: 110px;
 
         @media(max-width: 991px){
@@ -18,6 +49,9 @@
 
         &__left{
             &__title{
+                font-size: 48px;
+                line-height: 50px;
+
                 @media(max-width: 991px){
                     font-size: 28px;
                     line-height: 30px;
