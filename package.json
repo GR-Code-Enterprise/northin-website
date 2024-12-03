@@ -7,7 +7,8 @@
   "scripts": {
     "scss_index": "sass --watch src/styles/indexPage.scss src/assets/css/indexPage.css --style compressed",
     "scss_proposito": "sass --watch src/styles/propositoPage.scss src/assets/css/propositoPage.css --style compressed",
-    "scss_project": "sass --watch src/styles/projectPage.scss src/assets/css/projectPage.css --style compressed"
+    "scss_project": "sass --watch src/styles/projectPage.scss src/assets/css/projectPage.css --style compressed",
+    "scss_contact": "sass --watch src/styles/contactPage.scss src/assets/css/contactPage.css --style compressed"
   },
   "repository": {
     "type": "git",

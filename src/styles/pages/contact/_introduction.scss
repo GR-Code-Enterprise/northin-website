@@ -1,0 +1,87 @@
+.introduction{
+    margin-top: calc(130px + 280px);
+    margin-bottom: 250px;
+
+    @media(max-width: 991px){
+        margin-top: calc(50px + 84px);
+        margin-bottom: 120px;
+    }
+
+    &__container{
+        &__left{
+            h1{
+                max-width: 400px;
+            }
+
+            &__cta{
+                display: grid;
+                grid-template-columns: auto 516px;
+                justify-content: space-between;
+                column-gap: 50px;
+                margin-top: 75px;
+
+                @media(max-width: 1199px){
+                    grid-template-columns: auto 400px;
+                }
+                @media(max-width: 1150px){
+                    grid-template-columns: 1fr;
+                }
+
+                &__text{
+                    color: #F2E1C2;
+                    font-size: 32px;
+                    line-height: 36px;
+
+                    @media(max-width: 991px){
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+
+                &__links{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    @media(max-width: 1150px){
+                        margin-top: 70px;
+                    }
+
+                    a{
+                        display: block;
+                        color: #F2E1C2;
+                        font-size: 32px;
+                        text-align: center;
+                        border: 2px solid #F2E1C2;
+                        border-radius: 15px;
+                        font-weight: 800;
+                        box-sizing: border-box;
+                        padding: 22px 20px 22px 20px;
+                        margin-bottom: 20px;
+
+                        &:hover{
+                            background-color: $primary;
+                            color: #000;
+                            border-color: $primary;
+                        }
+
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+
+                        @media(max-width: 1150px){
+                            max-width: 516px;
+                            width: 100%;
+                            margin-bottom: 10px;
+                        }        
+
+                        @media(max-width: 991px){
+                            font-size: 16px;
+                            padding: 17px 20px;
+                        }        
+                    }
+                }
+            }
+        }
+    }
+}
